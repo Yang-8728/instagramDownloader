@@ -1,0 +1,4 @@
+instaloader
+python-dotenv
+
+# ffmpeg 是系统级工具，需通过 Homebrew 安装，不应写入 requirements.txt。

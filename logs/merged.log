@@ -1,0 +1,17 @@
+import random
+import time
+from instaloader.exceptions import QueryReturnedBadRequestException
+
+# 获取所有收藏的 Post 对象
+for attempt in range(3):
+    try:
+        saved_posts = list(profile.get_saved_posts())
+        break
+    except QueryReturnedBadRequestException as e:
+        print(f"⚠️ 请求被限制，第 {attempt+1} 次尝试失败，稍后重试...")
+        time.sleep(30)
+
+# 遍历每一个收藏内容，模拟用户操作延迟
+for post in saved_posts:
+    time.sleep(random.uniform(1.5, 3.5))  # 模拟人类操作
+    ...
