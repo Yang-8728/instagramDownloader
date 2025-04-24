@@ -1,0 +1,29 @@
+# ❌ Python virtual environment
+.venv/
+
+# ❌ VS Code settings
+.vscode/
+
+# ❌ Logs and downloaded files
+downloads/
+merged/
+logs/
+*.log
+file_list.txt
+
+# ❌ Session/cookie/env
+.env
+*.sqlite
+
+# ❌ FFmpeg zip/installation
+ffmpeg.zip
+tools/ffmpeg/
+
+# ❌ __pycache__ and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ❌ Test or temp files
+test_merge_videos.py
